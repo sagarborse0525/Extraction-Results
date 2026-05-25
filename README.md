@@ -75,9 +75,15 @@ resume-pipeline/
 ```bash
 mkdir python
 pip install -r requirements.txt -t python/
-zip -r lambda_layer.zip python
+zip -r my_layer.zip python
+Upload my_layer.zip
 ```
 ![Screenshot](images/upload_pkg.png)
+```
+Create Layer
+```
+![Screenshot](images/create_layer.png)
+
 
 ### 3. Deploy the Lambda Function
 
