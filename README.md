@@ -44,17 +44,13 @@ User (PDF) → S3 Bucket → [S3 Event: ObjectCreated] → AWS Lambda
 
 ```
 resume-pipeline/
-├── lambda/
-│   ├── handler.py            # Lambda entry point
-│   ├── extractor.py          # LangChain + Ollama extraction logic
-│   └── requirements.txt      # Python dependencies
-├── layer/
-│   └── build_layer.sh        # Script to build Lambda Layer ZIP
-├── infrastructure/
-│   ├── s3.tf                 # S3 bucket + event notification (Terraform)
-│   ├── lambda.tf             # Lambda function + IAM role
-│   ├── dynamodb.tf           # DynamoDB table definition
-│   └── variables.tf
+├── lambda_function.py
+├── llm_model.py
+├── pdf_extract.py
+├── prompts.py
+├── put_items.py
+├── requirements.txt
+└── resume_schema.py
 ├── Resume_drawio.png         # Architecture diagram
 └── README.md
 ```
