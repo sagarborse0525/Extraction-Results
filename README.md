@@ -51,8 +51,6 @@ resume-pipeline/
 ├── put_items.py
 ├── requirements.txt
 └── resume_schema.py
-├── Resume_drawio.png         # Architecture diagram
-└── README.md
 ```
 
 ---
