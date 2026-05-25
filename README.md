@@ -51,9 +51,8 @@ resume-pipeline/
 ├── put_items.py
 ├── requirements.txt
 └── resume_schema.py
-![Architecture](images/file_structure.png)
-
 ```
+![Screenshot](images/file_structure.png)
 
 ---
 
