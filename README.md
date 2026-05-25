@@ -248,9 +248,8 @@ Set these on your Lambda function:
 
 | Variable | Value |
 |---|---|
-| `DYNAMODB_TABLE` | `ResumeData` |
-| `OLLAMA_HOST` | EC2 IP or `localhost` (container Lambda) |
-| `OLLAMA_MODEL` | `llama3` or `mistral` |
+| `OLLAMA_API_KEY` | `your ollama key` |
+| `OLLAMA_BASE_URL` | `https://api.ollama.com` |
 
 ---
 
