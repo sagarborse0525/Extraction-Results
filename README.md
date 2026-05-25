@@ -98,6 +98,10 @@ Create Layer
 
 ![Screenshot](images/trigger.png)
 
+### 4. Add Layer
+
+![Screenshot](images/layer.png)
+
 ### 5. Create DynamoDB Table
 
 ```bash
