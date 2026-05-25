@@ -84,33 +84,26 @@ Create Layer
 ```
 ![Screenshot](images/create_layer.png)
 
-### 🔐 IAM Role
+### 3. IAM Role
 ![Screenshot](images/role1.png)
 
-### 🔐 IAM Policy
+### 4. IAM Policy
 ![Screenshot](images/role2.png)
 
-### 3. Deploy the Lambda Function
+### 5. Deploy the Lambda Function
 
 ![Screenshot](images/lambda.png)
 
-### 4. Add S3 Trigger
+### 6. Add S3 Trigger
 
 ![Screenshot](images/trigger.png)
 
-### 4. Add Layer
+### 7. Add Layer
 
 ![Screenshot](images/layer.png)
 
-### 5. Create DynamoDB Table
-
-```bash
-aws dynamodb create-table \
-  --table-name ResumeData \
-  --attribute-definitions AttributeName=resumeId,AttributeType=S \
-  --key-schema AttributeName=resumeId,KeyType=HASH \
-  --billing-mode PAY_PER_REQUEST
-```
+### 8. Create DynamoDB Table
+![Screenshot](images/table.png)
 
 ---
 
