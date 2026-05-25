@@ -73,13 +73,9 @@ resume-pipeline/
 ### 2. Build the Lambda Layer
 
 ```bash
-cd layer
-pip install langchain langchain-community boto3 -t python/
-zip -r lambda_layer.zip python/
-aws lambda publish-layer-version \
-  --layer-name resume-pipeline-deps \
-  --zip-file fileb://lambda_layer.zip \
-  --compatible-runtimes python3.11
+mkdir python
+pip install -r requirements.txt -t python/
+zip -r lambda_layer.zip python
 ```
 
 ### 3. Deploy the Lambda Function
