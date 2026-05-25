@@ -68,10 +68,7 @@ resume-pipeline/
 - Ollama api key(https://ollama.com/settings/keys)
 
 ### 1. Create the S3 Bucket
-
-```bash
-aws s3 mb s3://resume-upload-bucket --region ap-south-1
-```
+![Screenshot](images/create_bkt.png)
 
 ### 2. Build the Lambda Layer
 
