@@ -1,0 +1,7 @@
+boto3
+pydantic
+pydantic[email]
+langchain_ollama
+langchain
+dotenv
+pymupdf #fitz
