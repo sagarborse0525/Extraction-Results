@@ -251,6 +251,8 @@ Set these on your Lambda function:
 | `OLLAMA_API_KEY` | `your ollama key` |
 | `OLLAMA_BASE_URL` | `https://api.ollama.com` |
 
+![Screenshot](images/env_var.png)
+
 ---
 
 ## 📌 Notes
