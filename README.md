@@ -96,17 +96,7 @@ Create Layer
 
 ### 4. Add S3 Trigger
 
-```bash
-aws s3api put-bucket-notification-configuration \
-  --bucket resume-upload-bucket \
-  --notification-configuration '{
-    "LambdaFunctionConfigurations": [{
-      "LambdaFunctionArn": "arn:aws:lambda:ap-south-1:<ACCOUNT_ID>:function:ResumeProcessor",
-      "Events": ["s3:ObjectCreated:*"],
-      "Filter": {"Key": {"FilterRules": [{"Name": "suffix", "Value": ".pdf"}]}}
-    }]
-  }'
-```
+![Screenshot](images/trigger.png)
 
 ### 5. Create DynamoDB Table
 
