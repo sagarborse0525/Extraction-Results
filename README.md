@@ -77,6 +77,7 @@ mkdir python
 pip install -r requirements.txt -t python/
 zip -r lambda_layer.zip python
 ```
+![Screenshot](images/upload_pkg.png)
 
 ### 3. Deploy the Lambda Function
 
