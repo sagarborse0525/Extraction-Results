@@ -84,6 +84,9 @@ Create Layer
 ```
 ![Screenshot](images/create_layer.png)
 
+### 🔐 IAM Role & Policy
+![Screenshot](images/role1.png)
+![Screenshot](images/role2.png)
 
 ### 3. Deploy the Lambda Function
 
