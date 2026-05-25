@@ -60,10 +60,12 @@ resume-pipeline/
 
 ### Prerequisites
 
-- AWS CLI configured (`aws configure`)
-- Python 3.11+
-- Terraform (optional, for IaC deployment)
-- Ollama running (locally or on EC2)
+- AWS Account
+- AWS Lambda
+- AWS Bucket
+- AWS DynamoDB
+- Lambda Role with S3 and DynamoDB access
+- Ollama api key(https://ollama.com/settings/keys)
 
 ### 1. Create the S3 Bucket
 
