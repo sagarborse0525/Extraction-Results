@@ -51,6 +51,8 @@ resume-pipeline/
 ├── put_items.py
 ├── requirements.txt
 └── resume_schema.py
+<img width="1503" height="847" alt="Screenshot 2026-05-25 at 3 28 11 PM" src="https://github.com/user-attachments/assets/609f435b-ca1e-40d4-8bfe-f842f5da0500" />
+
 ```
 
 ---
