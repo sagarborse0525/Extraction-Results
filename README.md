@@ -92,18 +92,7 @@ Create Layer
 
 ### 3. Deploy the Lambda Function
 
-```bash
-cd lambda
-zip function.zip handler.py extractor.py
-aws lambda create-function \
-  --function-name ResumeProcessor \
-  --runtime python3.11 \
-  --handler handler.lambda_handler \
-  --role arn:aws:iam::<ACCOUNT_ID>:role/ResumeProcessorRole \
-  --zip-file fileb://function.zip \
-  --timeout 300 \
-  --memory-size 1024
-```
+![Screenshot](images/lambda.png)
 
 ### 4. Add S3 Trigger
 
