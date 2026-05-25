@@ -105,6 +105,8 @@ Create Layer
 ### 8. Create DynamoDB Table
 ![Screenshot](images/table.png)
 
+### 9. Upload python file into lambda function
+![Screenshot](images/file.png)
 ---
 
 ## 🧠 Lambda Handler (handler.py)
