@@ -155,7 +155,10 @@ Create Layer
 }
 ```
 ![Screenshot](images/even.png)
----
+
+### 11. Update Function Timeout value
+- Keep 15 Min
+![Screenshot](images/timeout.png)
 
 ## 🔐 IAM Policy
 
