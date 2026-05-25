@@ -1,4 +1,4 @@
-# 📄 AWS Resume Processing Pipeline
+# 📄 Extract Resume Data using LLM
 
 > Automatically extract structured data from PDF resumes using AWS Lambda, LangChain, and Ollama LLM — serverless, scalable, and fully event-driven.
 
@@ -76,11 +76,13 @@ resume-pipeline/
 mkdir python
 pip install -r requirements.txt -t python/
 zip -r my_layer.zip python
-Upload my_layer.zip
 ```
+- Upload my_layer.zip into bucket
+  
 ![Screenshot](images/upload_pkg.png)
 ```
-Create Layer
+- Create lambda layer
+
 ```
 ![Screenshot](images/create_layer.png)
 
