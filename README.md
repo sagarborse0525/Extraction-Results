@@ -108,7 +108,52 @@ Create Layer
 ### 9. Upload python file into lambda function
 ![Screenshot](images/file.png)
 ---
+### 10. Add Lambda Even
 
+- Replace us-east-1 with the region you created your Amazon S3 bucket in.
+- Replace both instances of 'resume-parser-bkt-2026' with the name of your own Amazon S3 bucket.
+- Replace 'Resume.pdf' with the name of the test object you uploaded to your bucket earlier(PDF Resume)
+
+```json
+{
+  "Records": [
+    {
+      "eventVersion": "2.0",
+      "eventSource": "aws:s3",
+      "awsRegion": "us-east-1",
+      "eventTime": "1970-01-01T00:00:00.000Z",
+      "eventName": "ObjectCreated:Put",
+      "userIdentity": {
+        "principalId": "EXAMPLE"
+      },
+      "requestParameters": {
+        "sourceIPAddress": "127.0.0.1"
+      },
+      "responseElements": {
+        "x-amz-request-id": "EXAMPLE123456789",
+        "x-amz-id-2": "EXAMPLE123/5678abcdefghijklambdaisawesome/mnopqrstuvwxyzABCDEFGH"
+      },
+      "s3": {
+        "s3SchemaVersion": "1.0",
+        "configurationId": "resume-parser-bkt-2026",
+        "bucket": {
+          "name": "amzn-s3-demo-bucket",
+          "ownerIdentity": {
+            "principalId": "EXAMPLE"
+          },
+          "arn": "arn:aws:s3:::resume-parser-bkt-2026"
+        },
+        "object": {
+          "key": "Resume.pdf",
+          "size": 1024,
+          "eTag": "0123456789abcdef0123456789abcdef",
+          "sequencer": "0A1B2C3D4E5F678901"
+        }
+      }
+    }
+  ]
+}
+```
 
 ---
 
